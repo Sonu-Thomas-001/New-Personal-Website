@@ -1688,7 +1688,7 @@ h6 {
 }
 
 .dizme_tm_skills .right img {
-    max-height: 6500px
+    max-height: 650px
 }
 
 .dizme_tm_full_link {
@@ -3566,6 +3566,11 @@ input[type=number] {
         font-size: 20px
     }
 
+    .dizme_tm_about .right .text .detailed {
+        max-width: 100%;
+        font-weight:700;
+    }
+
     .dizme_tm_about .right .title h3 {
         font-size: 35px;
         max-width: 100%
@@ -3767,7 +3772,7 @@ input[type=number] {
 
     .dizme_tm_copyright .inner {
         flex-direction: column;
-        align-items: center
+        align-items: center;
     }
 }
 
@@ -3777,6 +3782,11 @@ input[type=number] {
         max-height: 300px;
         padding-top: 80px;
         
+    }
+
+    .dizme_tm_about .left .image img {
+        max-width: 300px;
+        max-height: 500px
     }
 
     .dizme_tm_hero .job {
