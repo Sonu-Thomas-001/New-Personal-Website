@@ -228,6 +228,10 @@ body.dark .dizme_tm_contact input {
     color: #b9b5c9;
     border: 1px solid rgba(214, 219, 229, .36)
 }
+body.dark .dizme_tm_contact select {
+    color: #b9b5c9;
+    border: 1px solid rgba(214, 219, 229, .36)
+}
 
 body.dark .dizme_tm_contact .message_area textarea {
     color: #b9b5c9;

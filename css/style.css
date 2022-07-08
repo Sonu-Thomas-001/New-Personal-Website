@@ -615,6 +615,8 @@ h6 {
     overflow: hidden
 }
 
+
+
 .dizme_tm_button span {
     position: relative;
     z-index: 2;
@@ -624,6 +626,9 @@ h6 {
     -o-transition: all .3s ease;
     transition: all .3s ease
 }
+
+
+
 
 .dizme_tm_button a:before {
     position: absolute;
@@ -641,13 +646,18 @@ h6 {
     transition: all .3s ease
 }
 
+
 .dizme_tm_button a:hover:before {
     height: 0
 }
 
+
 .dizme_tm_button a:hover span {
     color: #000
 }
+
+
+
 
 .dizme_tm_hero .social {
     padding-left: 27px;
@@ -657,12 +667,15 @@ h6 {
 
 .dizme_tm_hero .social ul {
     margin: 0;
-    list-style-type: none
+    list-style-type: none;
 }
 
 .dizme_tm_hero .social ul li {
+    width: 30px;
+    height: 15px;
     margin: 0 15px 0 0;
-    display: inline-block
+    display: inline-block;
+    font-size:x-large;
 }
 
 .dizme_tm_hero .social ul li:last-child {
@@ -2566,7 +2579,7 @@ h6 {
     position: relative
 }
 
-.dizme_tm_subscribe .field input[type=text] {
+.dizme_tm_subscribe .field input[type=email] {
     width: 100%;
     height: 72px;
     border-radius: 12px;
@@ -2575,7 +2588,7 @@ h6 {
     padding-left: 30px
 }
 
-.dizme_tm_subscribe .field input[type=text]:focus {
+.dizme_tm_subscribe .field input[type=email]:focus {
     outline: none
 }
 
@@ -2590,9 +2603,54 @@ h6 {
     font-family: jost, sans-serif;
     font-size: 18px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: bolder;
     background-color: #f75023;
     padding: 0 35px
+}
+
+.dizme_tm_contact .dizme_tm_button input[type=submit] {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f75023;
+    font-family: jost, sans-serif;
+    font-weight: bolder;
+    border-radius: 50px;
+    border: 2px solid #f75023;
+    padding: 14px 48px 13px;
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+}
+
+.dizme_tm_contact .dizme_tm_button input[type=submit]:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(249, 104, 42);
+    font-family: jost, sans-serif;
+    font-weight: bolder;
+    border-radius: 50px;
+    border: 2px solid #f75023;
+    padding: 14px 48px 13px;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1.06);
+}
+
+.dizme_tm_subscribe .field input[type=submit]:hover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 72px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: #fff;
+    font-family: jost, sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    background-color: rgb(249, 104, 42);
+    padding: 0 35px;
+    transform: scaleX(1.06);
 }
 
 .dizme_tm_contact {
@@ -2634,6 +2692,11 @@ h6 {
     display: flex;
     align-items: center
 }
+.dizme_tm_contact .contact_inner .left .list_inner .short h3 {
+    color:#f75023;
+    font-weight: bolder;
+    font-family: jost, sans-serif;
+}
 
 .dizme_tm_contact .left .icon {
     width: 88px;
@@ -2659,9 +2722,20 @@ h6 {
     margin-bottom: 5px
 }
 
+.dizme_tm_contact .left .short span {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffff;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
 .dizme_tm_contact .left .short a {
     text-decoration: none;
-    color: #6f6b80;
+    color: #fff;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -2670,7 +2744,7 @@ h6 {
 }
 
 .dizme_tm_contact .left .short a:hover {
-    color: #f75023
+    color: #f0c45c;
 }
 
 .dizme_tm_contact .right {
@@ -2684,11 +2758,20 @@ h6 {
     float: left
 }
 
+.dizme_tm_contact .fields h3 {
+    font-weight: bolder;
+    color: #f75023;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: xx-large;
+    font-family: jost, sans-serif;
+}
+
 .dizme_tm_contact .input_list {
     width: 100%;
     height: auto;
     clear: both;
-    float: left
+    float: left;
 }
 
 .dizme_tm_contact .input_list ul {
@@ -2703,7 +2786,7 @@ h6 {
     padding-left: 12px
 }
 
-.dizme_tm_contact input {
+.dizme_tm_contact  input {
     width: 100%;
     height: 58px;
     padding: 0 30px;
@@ -2711,10 +2794,45 @@ h6 {
     border: 1px solid #d6dbe5;
     border-radius: 12px;
     color: #6f6b80;
-    font-size: 18px
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dizme_tm_contact .selectlist select {
+    width: 100%;
+    height: 58px;
+    padding: 0 30px;
+    background-color: transparent;
+    border: 1px solid #d6dbe5;
+    border-radius: 12px;
+    color: #6f6b80;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 12px;
+    float: left;
+    padding-left: 12px;
+    
+
+}
+
+.dizme_tm_contact select option {
+    width: 100%;
+    height: 58px;
+    padding: 0 30px;
+    background-color: transparent;
+    border: 1px solid #d6dbe5;
+    border-radius: 12px;
+    color: #6f6b80;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .dizme_tm_contact input:focus {
+    background-color: transparent;
+    outline: none
+}
+
+.dizme_tm_contact select:focus {
     background-color: transparent;
     outline: none
 }
@@ -2743,7 +2861,8 @@ input[type=number] {
     border: 1px solid #d6dbe5;
     border-radius: 12px;
     color: #6f6b80;
-    font-size: 18px
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .dizme_tm_contact .message_area textarea:focus {
@@ -2812,7 +2931,8 @@ input[type=number] {
 }
 
 .dizme_tm_copyright .left p {
-    font-size: 16px
+    font-size: 16px;
+    text-align: center;;
 }
 
 .dizme_tm_copyright .left a {
@@ -2823,7 +2943,7 @@ input[type=number] {
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-    transition: all .3s ease
+    transition: all .3s ease;
 }
 
 .dizme_tm_copyright .left a:hover {
@@ -3653,7 +3773,7 @@ input[type=number] {
 
     .dizme_tm_skills .right img {
         max-width: auto;
-        max-height: auto
+        max-height: auto;
     }
 
     .dizme_tm_main_title {
@@ -3754,12 +3874,12 @@ input[type=number] {
     }
 
     .dizme_tm_contact .left .short h3 {
-        font-size: 25px
+        font-size: 25px;
     }
 
     .dizme_tm_contact .left {
         width: 100%;
-        margin-bottom: 40px
+        margin-bottom: 40px;
     }
 
     .dizme_tm_contact .right {
@@ -3770,6 +3890,8 @@ input[type=number] {
         display: none
     }
 
+    
+
     .dizme_tm_copyright .inner {
         flex-direction: column;
         align-items: center;
@@ -3777,6 +3899,14 @@ input[type=number] {
 }
 
 @media(max-width:768px) {
+
+    .dizme_tm_copyright .left p {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+
     .dizme_tm_hero .avatar img {
         max-width: 300px;
         max-height: 300px;
