@@ -235,7 +235,7 @@
                 <div class="container">
                     <div class="dizme_tm_main_title" data-align="center">
                         <!--<span>Portfolio</span>-->
-                        <h1 class="about  greenText" style="text-align: center;">Portfolio</h1>
+                        <h1 class="about  greenText fadeInUp" style="text-align: center;">Portfolio</h1>
                         <h3>My Amazing Works</h3>
                         <p>Most common methods for designing websites that work well on desktop is responsive and
                             adaptive design</p>
@@ -596,7 +596,7 @@
         <div class="dizme_tm_section" >
             <div class="dizme_tm_skills" id="skill">
                 <div class="container">
-                    <h1 class="about greenText" style="text-align: center; margin-bottom: 10px;margin-top: 50px;">My Skills</h1>
+                    <h1 class="about greenText fadeInUp" style="text-align: center; margin-bottom: 10px;margin-top: 50px;">My Skills</h1>
                     <div class="wrapper">
                         
                         <div class="left anim_moveLeft">
@@ -716,7 +716,7 @@
                 <div class="container">
                     <div class="dizme_tm_main_title" data-align="center">
                         <!--<span>Services</span>-->
-                        <h1 class="about greenText" style="text-align: center;">Services</h1>
+                        <h1 class="about greenText fadeInUp" style="text-align: center;">Services</h1>
                         <h3>What I Do for Clients</h3>
                         <p>We builds & develops, static & dynamic websites based on customer requirements.</p>
                     </div>
@@ -1338,7 +1338,7 @@
                 <div class="container">
                     <div class="dizme_tm_main_title" data-align="center">
                         <!--<span>Contact Me</span>-->
-                        <h1 class="about greenText" style="text-align: center; color:#f75023;">Contact Me</h1>
+                        <h1 class="about greenText fadeInUp" style="text-align: center; color:#f75023;">Contact Me</h1>
                         <h3>I Want To Hear From You</h3>
                         <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and
                             8:00 p.m. ET,All Days</p>
@@ -1401,10 +1401,10 @@
                                     <div class="empty_notice"><span>Please Fill Required Fields</span></div>
                                     <div class="input_list">
                                         <ul>
-                                            <li><input id="name" type="text" placeholder="Your Name" required/></li>
-                                            <li><input id="email" type="text" placeholder="Your Email" required/></li>
-                                            <li><input id="phone" type="number" placeholder="Your Phone" required/></li>
-                                            <li><input id="subject" type="text" placeholder="Subject" required/></li>
+                                            <li><input id="name" type="text" placeholder="Your Name" name="Name" required/></li>
+                                            <li><input id="email" type="text" placeholder="Your Email" name="Email Address" required/></li>
+                                            <li><input id="phone" type="number" placeholder="Your Phone" name="Phone Number" required/></li>
+                                            <li><input id="subject" type="text" placeholder="Subject" name="Subject" required/></li>
                                             <!--<li><select type="text" id="subject" name="Doctor" value="" class="form-control" placeholder="Subject">
                                                 <option value="">Select Services</option>
                                                 <option value="Responsive Web Designing">Responsive Web Designing</option>
@@ -1422,7 +1422,7 @@
                                     </div>
                                     <div class="selectlist">
                                     <ul>
-                                        <select type="text" id="subject" name="Doctor" value="" class="form-control" placeholder="Subject">
+                                        <select type="text" id="service" name="Service" value="" class="form-control" placeholder="Subject">
                                             <option value="">Select Services</option>
                                             <option value="Responsive Web Designing">Responsive Web Designing</option>
                                             <option value="Video Editing">Video Editing</option>
@@ -1435,10 +1435,11 @@
                                         </select>
                                         
                                     </ul>
+                                    
 
                                     </div>
                                     <div class="message_area">
-                                        <textarea id="" name="message" placeholder="Write your message here" required></textarea>
+                                        <textarea id="" name="Message" placeholder="Write your message here" required></textarea>
                                     </div>
                                     <div class="dizme_tm_button wow fadeInRight">
                                         <!--<a id="send_message"  type="submit" href="#"><span>Submit Now</span></a>-->
@@ -1527,7 +1528,7 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbzmFMDBrER_GHnfZyjmb4X2UY8f_tRjHw6Rc-LjE6NL_EpgFkLKrEZpGFBsjMAESjZa/exec",
+                url:"https://script.google.com/macros/s/AKfycbzACxMriBDcAVAfQKxTfkJm8jFPDB4WRSJEoqhVSyNAhU0mauaXAbJpaqrkkFKdu8E7/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
@@ -1546,7 +1547,7 @@
         $("#submit-email-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbzmFMDBrER_GHnfZyjmb4X2UY8f_tRjHw6Rc-LjE6NL_EpgFkLKrEZpGFBsjMAESjZa/exec",
+                url:"https://script.google.com/macros/s/AKfycbz61dt03fvgQwf7cl_aqlriWw2mXgfeE4ZYxfB6K5xQDGaEKnOMczg4aXchMGuBU1rNCA/exec",
                 data:$("#submit-email-form").serialize(),
                 method:"post",
                 success:function (response){
