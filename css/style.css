@@ -944,16 +944,21 @@ h6 {
 
 .dizme_tm_about .numbers.year {
     top: 60px;
-    left: -80px
+    left: -160px
 }
 .dizme_tm_about .numbers.year1 {
     top: 200px;
-    left: -80px
+    left: -150px
 }
 
 .dizme_tm_about .numbers.project {
-    bottom: 130px;
-    right: -90px
+    bottom: 280px;
+    right: -120px
+}
+
+.dizme_tm_about .numbers.project1 {
+    bottom: 10px;
+    right: -120px
 }
 
 .dizme_tm_about .numbers .wrapper {
@@ -969,12 +974,20 @@ h6 {
     padding: 14px 30px 11px 26px
 }
 
+.dizme_tm_about .numbers.project1 .wrapper {
+    padding: 14px 30px 11px 26px
+}
+
 .dizme_tm_about .numbers .wrapper h3 {
     font-size: 60px;
     color: #1cbe59
 }
 
 .dizme_tm_about .numbers.project h3 {
+    color: #6e50f0
+}
+
+.dizme_tm_about .numbers.project1 h3 {
     color: #6e50f0
 }
 
@@ -3714,6 +3727,12 @@ input[type=number] {
     }
 
     .dizme_tm_about .numbers.project {
+        bottom: auto;
+        right: auto;
+        margin-bottom: 30px
+    }
+
+    .dizme_tm_about .numbers.project1 {
         bottom: auto;
         right: auto;
         margin-bottom: 30px
