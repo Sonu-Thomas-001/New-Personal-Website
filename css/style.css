@@ -385,7 +385,7 @@ h6 {
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-    transition: all .3s ease
+    transition: all .3s ease;
 }
 
 .dizme_tm_header .inner {
@@ -402,7 +402,7 @@ h6 {
 }
 
 .dizme_tm_header .logo img {
-    max-width: 150px;
+    max-width: 140px;
     max-height: 80px
 }
 
@@ -506,6 +506,18 @@ h6 {
     color: #f0c45c !important
 }
 
+.redText{
+    color: rgb(208, 64, 64) !important
+}
+
+.goldText{
+    color: gold !important
+}
+
+.blueText{
+    color: #30a1d9 !important
+}
+
 .orangeBackground {
     background-color: #fedfd7 !important
 }
@@ -525,6 +537,10 @@ h6 {
     float: left;
     position: relative;
     margin-bottom: 190px
+}
+.cmpnytext{
+    padding-top: 5px;
+    padding-bottom:  30px;
 }
 
 .dizme_tm_hero .background {
@@ -610,7 +626,7 @@ h6 {
     font-weight: 500;
     border-radius: 50px;
     border: 2px solid #f75023;
-    padding: 14px 48px 13px;
+    padding: 4px 48px 13px;
     position: relative;
     overflow: hidden
 }
@@ -943,16 +959,20 @@ h6 {
 }
 
 .dizme_tm_about .numbers.year {
-    top: 60px;
+    top: 10px;
     left: -160px
 }
 .dizme_tm_about .numbers.year1 {
-    top: 200px;
-    left: -150px
+    top: 135px;
+    left: -160px
+}
+.dizme_tm_about .numbers.year2 {
+    top: 260px;
+    left: -160px
 }
 
 .dizme_tm_about .numbers.project {
-    bottom: 280px;
+    bottom: 130px;
     right: -120px
 }
 
@@ -3301,7 +3321,7 @@ input[type=number] {
     }
 
     .dizme_tm_header .menu ul li {
-        margin-right: 30px
+        margin-right: 20px
     }
 
     .dizme_tm_hero .hello h3 {
@@ -3720,6 +3740,12 @@ input[type=number] {
         margin-bottom: 20px
     }
     .dizme_tm_about .numbers.year1 {
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+    .dizme_tm_about .numbers.year2 {
         top: auto;
         left: auto;
         margin-top: 20px;
